@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-ENV PYTHON_VERSION 3.9.4
+ENV PYTHON_VERSION 3.8.8
 ENV PYTHON_ROOT /tmp/Python/python-$PYTHON_VERSION
 ENV PATH $PYTHON_ROOT/bin:$PATH
 ENV PYENV_ROOT /tmp/.pyenv
@@ -40,7 +40,8 @@ RUN $PYENV_ROOT/plugins/python-build/install.sh
 RUN /usr/local/bin/python-build -v $PYTHON_VERSION $PYTHON_ROOT
 RUN rm -rf $PYENV_ROOT
 
-RUN pip install --upgrade pip
+RUN pip install --upgrade pip \
+	nb_black
 
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
