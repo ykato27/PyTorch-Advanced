@@ -1,6 +1,6 @@
-# python-template-repository
+# PyTorch-example
 
-本リポジトリはPython 環境のテンプレートリポジトリです。
+本リポジトリはPyTorch のexample リポジトリです。
 
 
 ## リポジトリ構成
