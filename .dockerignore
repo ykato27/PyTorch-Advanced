@@ -1,2 +1,7 @@
 data
 notebook
+__pycache__
+.venv
+.pytest_cache
+.mypy_cache
+.vscode
