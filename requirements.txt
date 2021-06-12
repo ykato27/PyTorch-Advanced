@@ -21,3 +21,5 @@ torchaudio
 torchvision
 tqdm
 ipywidgets
+opencv-python
+opencv-contrib-python

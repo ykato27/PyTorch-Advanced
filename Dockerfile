@@ -24,6 +24,7 @@ RUN apt-get update \
     libncursesw5-dev \
     libffi-dev \
     liblzma-dev \
+    libgl1-mesa-dev \
     vim \
     ssh \
     wget \
