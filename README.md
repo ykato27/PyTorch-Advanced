@@ -26,12 +26,12 @@
 
 ## 環境構築
 
-* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/python-template-repository）
+* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/PyTorch-example）
 ```
-cd Desktop/python-template-repository
+cd Desktop/PyTorch-example
 ```
 
-* Dockerによる環境構築（フォルダをマウント：Desktop/python-template-repository）
+* Dockerによる環境構築（フォルダをマウント：Desktop/PyTorch-example）
 ```
 docker-compose up --build
 ```
