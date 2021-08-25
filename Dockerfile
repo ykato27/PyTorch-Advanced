@@ -1,6 +1,6 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
-ENV PYTHON_VERSION 3.8.8
+ENV PYTHON_VERSION 3.9.6
 ENV PYTHON_ROOT /tmp/Python/python-$PYTHON_VERSION
 ENV PATH $PYTHON_ROOT/bin:$PATH
 ENV PYENV_ROOT /tmp/.pyenv
@@ -42,6 +42,10 @@ RUN rm -rf $PYENV_ROOT
 
 RUN pip install --upgrade pip \
 	nb_black
+RUN pip install torch==1.9.0+cpu \
+	torchvision==0.10.0+cpu \
+	torchaudio==0.9.0 \
+	-f https://download.pytorch.org/whl/torch_stable.html
 
 COPY requirements.txt ./
 RUN pip install -r requirements.txt

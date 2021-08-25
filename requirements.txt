@@ -12,13 +12,10 @@ flake8-variables-names==0.0.3
 flake8-pytest-style==1.3.0
 flake8-docstrings==1.5.0
 pre-commit==2.11.1
-matplotlib==3.3.4
+matplotlib==3.4.3
 seaborn==0.11.1
 scikit-learn==0.24.1
 japanize-matplotlib==1.1.3
-torch
-torchaudio
-torchvision
 tqdm
 ipywidgets
 opencv-python
