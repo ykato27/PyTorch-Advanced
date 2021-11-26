@@ -26,12 +26,14 @@
 
 ## 環境構築
 
-* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/PyTorch-example）
+- Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/PyTorch-example）
+
 ```
 cd Desktop/PyTorch-example
 ```
 
-* Dockerによる環境構築（フォルダをマウント：Desktop/PyTorch-example）
+- Dockerによる環境構築（フォルダをマウント：Desktop/PyTorch-example）
+
 ```
 docker-compose up --build
 ```
@@ -39,6 +41,9 @@ docker-compose up --build
 * ブラウザーを立ち上げてlocalhost:8888へアクセス
 * ローカルフォルダがマウントされている
 
+## Display notebooks
+
+- [View Jupyter notebooks in nbviewer](https://nbviewer.jupyter.org/github/ykato27/PyTorch-example/tree/main/notebooks/)
 
 ## 動作環境
 マシンスペック（Mac)
